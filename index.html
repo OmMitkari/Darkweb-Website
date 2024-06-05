@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darknet Store</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/logo.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+      <div class="alert">
+        <div class="container">
+          <p class="alert-text"></p>
+        </div>
+      </div>
+
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search product"
+              class="search-field"
+            />
+
+            <button class="search-submit" aria-label="search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/Darknet_Store.png"
+              width="190"
+              height="26"
+              alt="Glowing"
+            />
+          </a>
+
+          <div class="header-actions">
+            <button class="header-action-btn" aria-label="user">
+              <ion-icon
+                name="person-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
+
+            <button class="header-action-btn" aria-label="favourite item">
+              <ion-icon
+                name="star-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">0</span>
+            </button>
+
+            <button class="header-action-btn" aria-label="cart item">
+              <data class="btn-text" value="0">$0.00</data>
+
+              <ion-icon
+                name="bag-handle-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">0</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link has-after">Home</a>
+              </li>
+
+              <li>
+                <a href="#collection" class="navbar-link has-after"
+                  >Collection</a
+                >
+              </li>
+
+              <li>
+                <a href="#shop" class="navbar-link has-after">Shop</a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/Darknet_Store.png"
+              width="179"
+              height="26"
+              alt="Glowing"
+            />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link" data-nav-link
+              >Collection</a
+            >
+          </li>
+
+          <li>
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero" data-section>
+          <div class="container">
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/images/hero-banner-1-Ammo.jpg');
+                  "
+                >
+                  <div class="card-content">
+                    <h1 class="h1 hero-title">
+                      Gun Glory <br />
+                      Begins Here.
+                    </h1>
+
+                    <p class="hero-text">
+                      Life is short and good and sometimes risky. Take a chance!
+                    </p>
+
+                    <p class="price">Starting at $599</p>
+
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/images/hero-banner-2-Drugs.jpg');
+                  "
+                >
+                  <div class="card-content">
+                    <h1 class="h1 hero-title">
+                      Deal<br />
+                      or no deal.
+                    </h1>
+
+                    <p class="hero-text">
+                      When you smoke the herb, it reveals you to yourself. Go for it!
+                    </p>
+
+                    <p class="price">Starting at $600</p>
+
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #COLLECTION
+      -->
+
+        <section
+          class="section collection"
+          id="collection"
+          aria-label="collection"
+          data-section
+        >
+          <div class="container">
+            <ul class="collection-list">
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">Combo offer</h2>
+
+                  <p class="card-text">Starting at $1300</p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Shop Now</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection-1-Ammos.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">What’s New?</h2>
+
+                  <p class="card-text">Mobile and Desktop jammers </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Discover Now</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection-2-jammer.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">Buy 1 Get 1</h2>
+
+                  <p class="card-text">Starting at $900</p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Discover Now</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection-3-drug.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #SHOP
+      -->
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Our Bestsellers</h2>
+
+              <a href="#" class="btn-link">
+                <span class="span">Shop All Products</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-01-mjammer.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$900</del>
+
+                      <span class="span">$700</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Desktop Jammer</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">70 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-02-djammer.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Bio-shroom Rejuvenating Serum"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$650</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Mobile Jammer</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">47 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-03-m416.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$1200</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >M-416</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">51 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-04-heroine.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Heroine</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">100 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-05-Marijuana.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$750</del>
+
+                      <span class="span">$550</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Marijuana</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">50 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-06-awm.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$1500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">AWM</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">90 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Under $650</h2>
+
+              <a href="#" class="btn-link">
+                <span class="span">Shop All Products</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-07-hashish.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$750</del>
+
+                      <span class="span">$550</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Hashish</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">120 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-08-Pistol.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Bio-shroom Rejuvenating Serum"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$600 </span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Pistol</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">66 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-09-COCAINE.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$600</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Cocaine</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">78 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-10-Morphine.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$450</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Morphine</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">45 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-11-Shockgun.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$550</del>
+
+                      <span class="span">$350</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Shock Gun</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">98 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/product-11-p10.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$550</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">P10</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">56 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BANNER
+      -->
+
+        <!-- 
+        - #FEATURE
+      -->
+        <!-- 
+        - #OFFER
+      -->
+
+        <!-- 
+        - #BLOG
+      -->
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Darknet Store</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text">
+                Find a location nearest you. See
+                <a href="#" class="link">Our Stores</a>
+              </p>
+            </li>
+
+            <li>
+              <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text">darknetStore@yahoo.com</p>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">New Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Best Sellers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bundle & Save</a>
+            </li>
+
+            
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Infomation</p>
+            </li>
+
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Shipping FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="newsletter-title">Emails.</p>
+
+            <p class="newsletter-text">
+              Enter your email below to be the first to know about new
+              collections and product launches.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter your email address"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2024 Darknet Store</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/Darknet_Store.png"
+              width="179"
+              height="26"
+              loading="lazy"
+              alt="Glowing"
+            />
+          </a>
+
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
